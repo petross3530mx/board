@@ -1,72 +1,70 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+Создать приложение «Bulletin Board» в котором пользователь сможет размещать свое объявление. 
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Данное объявление каждый пользователь сможет увидеть на главной странице.
+Приложение должно содержать:
+  Вход в приложение
+  Регистрацию в приложение
+  Главная страница
+  Личный кабинет
+  
+Вход в приложение
+Должно содержать в себе следующее:
+  Поле ввода: email
+  Поле ввода: password
+  Кнопку для входа
+  Кнопку для перехода на окно регистрации
+  
+Регистрация в приложение
+Должно содержать в себе следующее:
+  Поле ввода: first name
+  Поле ввода: last name
+  Поле ввода: email
+  Поле ввода: password
+  Кнопку чтобы зарегистрироваться
+  
+Главная страница
+Должно содержать в себе следующее:
+  Header
+  Список объявлений
+  Конфигурация header:
+  Вкладка для перехода на главную (неактивна)
+  Вкладка для перехода в личный кабинет
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Конфигурация списка объявлений:
+  10 объявлений на одну страницу
+  Все объявления должны выводиться в виде новостной ленты
+  
+Конфигурация обявления:
+  Заголовок
+  Изображение объявления (Можно не добавлять, но это будет плюсом)
+  Текстовое описание
+  Время добавления
+  Автор
+  
+Личный кабинет
+Должно содержать в себе следующее:
+  Header
+  Редактирование профиля
+  Добавление объявления
+  Конфигурация header:
+  Вкладка для перехода на главную
+  Вкладка для перехода в личный кабинет (неактивна)
+  
+Конфигурация редактора профиля:
+Возможность изменить:
+  first name
+  last name
+  email
+  password
+  Все четыре поля находятся в одном отдельном элементе вместе с кнопкой применить
+  
+Конфигурация добавления объявления:
+Содержит в себе:
+  Заголовок
+  Изображение объявления (Можно не добавлять, но это будет плюсом)
+  Текстовое описание
+  Кнопку добавить
+  Все четыре элемента находятся в одном отдельном элементе вместе с кнопкой добавить
+  
+Технические требования:
+Результат задания должен быть выложен на github
